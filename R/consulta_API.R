@@ -148,7 +148,7 @@ pesquisar_comex_stat <- function(ano_inicial = substr(Sys.Date(), 1,4 ) , ano_fi
   url_completa <- paste0(comex_stat, filtro_cs)
 
   #consulta a API, extrai os dados e converte para um dataframe
-  pesquisa_cs <- httr::GET(url_completa)
+  pesquisa_cs <- httr::GET(url_completa, config = httr::config(ssl_verifypeer = FALSE))
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa_cs$status_code!=200) {
