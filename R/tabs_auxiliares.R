@@ -53,7 +53,7 @@ pesquisar_ncm <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/product/ncm', query = params)
+  pesquisa <- httr::GET(url = '://api-comexstat.mdic.gov.br/pt/product/ncm', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -98,7 +98,7 @@ pesquisar_sh6 <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/harmonized-system/subposition', query = params)
+  pesquisa <- httr::GET(url = '://api-comexstat.mdic.gov.br/pt/harmonized-system/subposition', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -141,7 +141,7 @@ pesquisar_sh4 <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/harmonized-system/position', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/harmonized-system/position', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -184,7 +184,7 @@ pesquisar_sh2 <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/harmonized-system/chapter', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/harmonized-system/chapter', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -228,7 +228,7 @@ pesquisar_ncm_sec <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/harmonized-system/section', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/harmonized-system/section', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -272,7 +272,7 @@ pesquisar_pais <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/location/countries', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/location/countries', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -315,7 +315,7 @@ pesquisar_blocos <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/location/blocks', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/location/blocks', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -359,7 +359,7 @@ pesquisar_uf <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/location/states', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/location/states', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -403,7 +403,7 @@ pesquisar_mun <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/location/cities', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/location/cities', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -447,7 +447,7 @@ pesquisar_via <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/location/via', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/location/via', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -489,7 +489,7 @@ pesquisar_urf <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/location/urf', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/location/urf', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -533,7 +533,7 @@ pesquisar_cgce3 <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/product-description/cgce-n3', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/product-description/cgce-n3', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -577,7 +577,7 @@ pesquisar_cgce2 <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/product-description/cgce-n2', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/product-description/cgce-n2', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -621,7 +621,7 @@ pesquisar_cgce1 <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/product-description/cgce-n1', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/product-description/cgce-n1', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -665,7 +665,7 @@ pesquisar_cuci_item <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/product-category/item', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/product-category/item', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -708,7 +708,7 @@ pesquisar_cuci_sub <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/product-category/subposition', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/product-category/subposition', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -752,7 +752,7 @@ pesquisar_cuci_pos <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/product-category/position', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/product-category/position', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -796,7 +796,7 @@ pesquisar_cuci_cap <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/product-category/chapter', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/product-category/chapter', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -840,7 +840,7 @@ pesquisar_cuci_sec <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/product-category/section', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/product-category/section', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -883,7 +883,7 @@ pesquisar_isic_classe <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/product-classification/class', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/product-classification/class', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -927,7 +927,7 @@ pesquisar_isic_grupo <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/product-classification/group', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/product-classification/group', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -971,7 +971,7 @@ pesquisar_isic_div <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/product-classification/division', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/product-classification/division', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
@@ -1015,7 +1015,7 @@ pesquisar_isic_sec <- function(pattern='') {
   )
 
   #Faz a requisição
-  pesquisa <- httr::GET(url = 'http://api-comexstat.mdic.gov.br/pt/product-classification/section', query = params)
+  pesquisa <- httr::GET(url = 'https://api-comexstat.mdic.gov.br/pt/product-classification/section', query = params)
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa$status_code!=200) {
