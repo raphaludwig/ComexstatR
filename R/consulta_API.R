@@ -148,14 +148,16 @@ pesquisar_comex_stat <- function(ano_inicial = substr(Sys.Date(), 1,4 ) , ano_fi
   url_completa <- paste0(comex_stat, filtro_cs)
 
   #consulta a API, extrai os dados e converte para um dataframe
-  pesquisa_cs <- httr::GET(url_completa, config = httr::config(ssl_verifypeer = FALSE))
+  pesquisa_cs <- httr2::request(url_completa) %>%
+    httr2::req_options(ssl_verifypeer = FALSE) %>% 
+    httr2::req_perform()
 
   #Verifica se a resposta foi recebida corretamente
   if(pesquisa_cs$status_code!=200) {
     return('Essa consulta é muito extensa (mais de 150 mil linhas) ou extrapolou o tempo de processamento permitido.')
   }
 
-  pesquisa_cs <- httr::content(pesquisa_cs, "text", encoding = 'UTF8')
+  pesquisa_cs <- httr2::resp_body_string(pesquisa_cs)
   pesquisa_cs <- jsonlite::fromJSON(pesquisa_cs,flatten = TRUE)
   pesquisa_cs <- as.data.frame(pesquisa_cs[[1]][[1]])
 
